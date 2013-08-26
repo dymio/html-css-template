@@ -1,0 +1,42 @@
+/*!
+ * Some helpers
+ *  taken from Bootstrap v3.0.0
+ */
+
+/**
+ * ====================================================================
+ * ---> MICRO CLEARFIX HACK <---
+ * http://nicolasgallagher.com/micro-clearfix-hack/
+ * http://stackoverflow.com/questions/211383/which-method-of-clearfix-is-best
+ * ====================================================================
+ */
+.clearfix:before, .clearfix:after { display: table; content: " "; }
+.clearfix:after { clear: both; }
+
+.pull-right { float: right !important; }
+.pull-left { float: left !important; }
+
+.hide { display: none !important; }
+.show { display: block !important; }
+.invisible { visibility: hidden; }
+
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.affix { position: fixed; }
+
+@-ms-viewport {
+  width: device-width;
+}
+
+@media screen and (max-width: 400px) {
+  @-ms-viewport { width: 320px; }
+}

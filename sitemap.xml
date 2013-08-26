@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>http://example.com/</loc>
+    <lastmod>2012-01-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
+
+<!--
+loc         required  url of page with protocol and with a trailing slash, must be less than 2048 chars
+lastmod     optional  date of last modification
+changefreq  optional  how frequently the page is likely to change, must be [ always, hourly, daily, weekly, monthly, yearly, never ]
+priority    optional  the priority of this URL relative to other URLs on site, must be from 0.0 to 1.0, default is 0.5
+-->

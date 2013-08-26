@@ -1,0 +1,195 @@
+/*!
+ * Content part base styles
+ *  taken from Bootstrap v3.0.0
+ */
+
+
+.content hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}
+
+.content p { margin: 0 0 10px; }
+.content small { font-size: 85%; }
+.content cite { font-style: normal; }
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6,
+.content .h1,
+.content .h2,
+.content .h3,
+.content .h4,
+.content .h5,
+.content .h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.1; }
+
+.content h1 small,
+.content h2 small,
+.content h3 small,
+.content h4 small,
+.content h5 small,
+.content h6 small,
+.content .h1 small,
+.content .h2 small,
+.content .h3 small,
+.content .h4 small,
+.content .h5 small,
+.content .h6 small {
+  font-weight: normal;
+  line-height: 1;
+  color: #999999; }
+
+.content h1,
+.content h2,
+.content h3 { margin-top: 20px; margin-bottom: 10px; }
+
+.content h4,
+.content h5,
+.content h6 { margin-top: 10px; margin-bottom: 10px; }
+
+.content h1, .content .h1 { font-size: 36px; }
+.content h2, .content .h2 { font-size: 30px; }
+.content h3, .content .h3 { font-size: 24px; }
+.content h4, .content .h4 { font-size: 18px; }
+.content h5, .content .h5 { font-size: 14px; }
+.content h6, .content .h6 { font-size: 12px; }
+
+.content h1 small, .content .h1 small { font-size: 24px; }
+.content h2 small, .content .h2 small { font-size: 18px; }
+.content h3 small, .content .h3 small,
+.content h4 small, .content .h4 small { font-size: 14px; }
+
+.content ul, .content ol { margin-top: 0; margin-bottom: 10px; }
+.content ul ul,
+.content ol ul,
+.content ul ol,
+.content ol ol { margin-bottom: 0; }
+
+.content dl { margin-bottom: 20px; }
+.content dt, .content dd { line-height: 1.428571429; }
+.content dt { font-weight: bold; }
+.content dd { margin-left: 0; }
+
+.content abbr[title],
+.content abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted #999999; }
+
+.content blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  border-left: 5px solid #eeeeee; }
+
+.content blockquote p {
+  font-size: 17.5px;
+  font-weight: 300;
+  line-height: 1.25; }
+.content blockquote p:last-child { margin-bottom: 0; }
+
+.content blockquote small {
+  display: block;
+  line-height: 1.428571429;
+  color: #999999; }
+.content blockquote small:before { content: '\2014 \00A0'; }
+
+.content blockquote.pull-right {
+  padding-right: 15px;
+  padding-left: 0;
+  border-right: 5px solid #eeeeee;
+  border-left: 0; }
+
+.content blockquote.pull-right p,
+.content blockquote.pull-right small { text-align: right; }
+.content blockquote.pull-right small:before { content: ''; }
+.content blockquote.pull-right small:after { content: '\00A0 \2014'; }
+
+.content q:before,
+.content q:after,
+.content blockquote:before,
+.content blockquote:after { content: ""; }
+
+.content address {
+  display: block;
+  margin-bottom: 20px;
+  font-style: normal;
+  line-height: 1.428571429; }
+
+.content code,
+.content pre {
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace; }
+
+.content code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  white-space: nowrap;
+  background-color: #f9f2f4;
+  border-radius: 4px; }
+
+.content pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.428571429;
+  color: #333333;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #cccccc;
+  border-radius: 4px; }
+
+.content pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  white-space: pre-wrap;
+  background-color: transparent;
+  border: 0; }
+
+/* TABLE */
+.content table {
+  max-width: 100%;
+  background-color: transparent;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #dddddd;
+}
+.content th { text-align: left; }
+
+.content table thead > tr > th,
+.content table tbody > tr > th,
+.content table tfoot > tr > th,
+.content table thead > tr > td,
+.content table tbody > tr > td,
+.content table tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.428571429;
+  vertical-align: top;
+  border: 1px solid #dddddd;
+}
+
+.content table thead > tr > th { vertical-align: bottom; }
+.content table > thead > tr > th,
+.content table > thead > tr > td {
+  border-bottom-width: 2px;
+}
+
+.content table caption + thead tr:first-child th,
+.content table colgroup + thead tr:first-child th,
+.content table thead:first-child tr:first-child th,
+.content table caption + thead tr:first-child td,
+.content table colgroup + thead tr:first-child td,
+.content table thead:first-child tr:first-child td { border-top: 0; }
+
+.content table tbody + tbody { border-top: 2px solid #dddddd; }
+
+.content table table { background-color: #ffffff; }
