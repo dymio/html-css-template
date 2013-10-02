@@ -1,16 +1,32 @@
-/**
- * STICKY FOOTER
- */
-html, body { width: 100%; height: 100%; }
-#wrapper {
+/** STICKY FOOTER **/
+html, body { height: 100%; }
+
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -72px;
+  padding: 0 0 72px; }
+#footer { height: 72px; background: silver; }
+/** END OF STICKY FOOTER FUNCTIONAL **/
+
+/*
+ * Sometimes, first, modern variant don't work because different reasons,
+ * but we have less stylish bulletproof
+ ** OLD FASHIONED STICKY FOOTER **
+#wrap {
   overflow: hidden;
   position: relative;
   min-height: 100%;
   height:auto !important;
-  height:100%;
-}
-#dilator { padding-bottom: 102px; }
-#footer { overflow: hidden; position: relative; margin-top: -72px; height: 72px; }
+  height:100%; }
+#wrap .dilator { padding-bottom: 72px; }
+#footer {
+  overflow: hidden;
+  position: relative;
+  margin-top: -72px;
+  height: 72px; }
+/** END OF OLD FASHIONED STICKY FOOTER **/
 
 /* Responsive media rules from Bootstrap 3 */
 /* DEFAULT IS EXTRA SMALL - less than 768px */
