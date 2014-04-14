@@ -15,7 +15,7 @@
 /* SITE */
   Last update: 2013/02/15
   Language: English / Russian
-  Doctype: HTML5, CSS3
+  Standarts: HTML5, CSS3
   Components: jQuery, Ruby on Rails
 
 

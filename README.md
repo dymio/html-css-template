@@ -1,7 +1,7 @@
 HTML and CSS Template
 =====================
 
-Version 0.9, August 26, 2013
+Version 1.0, April 14, 2014
 
 This is template for web project frontend. It includes:
 
@@ -25,4 +25,4 @@ Used components
 - [Normalize.css](http://github.com/necolas/normalize.css) as styles base
 - [Bootstrap](http://getbootstrap.com/) as source of many good decisions and design
 
-2013, Ivan Dymkov
+2014, Ivan Dymkov
