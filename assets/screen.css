@@ -41,6 +41,3 @@ html, body { height: 100%; }
 @media (min-width: 768px) and (max-width: 979px) { } /* Portrait tablet to landscape and desktop */
 @media (max-width: 767px) { } /* Landscape phone to portrait tablet */
 @media (max-width: 480px) { } /* Landscape phones and down */
-
-
-/* Right here you can start writing your styles */

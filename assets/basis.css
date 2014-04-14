@@ -1,12 +1,7 @@
 /*!
  * Screen base styles
- *  taken from Bootstrap v3.0.0
+ *  taken from Bootstrap v3.1.1
  */
-
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box; }
 
 html {
   font-size: 62.5%;
@@ -17,8 +12,8 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
-  color: #333333;
-  background-color: #ffffff;
+  color: #333;
+  background-color: #fff;
 }
 
 a {
@@ -35,4 +30,9 @@ a:focus {
   outline-offset: -2px;
 }
 
-img { vertical-align: middle; }
+figure {
+  margin: 0;
+}
+img {
+  vertical-align: middle;
+}

@@ -1,6 +1,6 @@
 /*!
  * Some helpers
- *  taken from Bootstrap v3.0.0
+ *  taken from Bootstrap v3.1.1
  */
 
 /**
@@ -19,10 +19,14 @@
 .hide { display: none !important; }
 .show { display: block !important; }
 .invisible { visibility: hidden; }
+.hidden {
+  display: none !important;
+  visibility: hidden !important; }
 
 .text-left { text-align: left; }
 .text-right { text-align: right; }
 .text-center { text-align: center; }
+.text-justify { text-align: justify; }
 .text-hide {
   font: 0/0 a;
   color: transparent;
@@ -33,10 +37,28 @@
 
 .affix { position: fixed; }
 
-@-ms-viewport {
-  width: device-width;
-}
+@-ms-viewport { width: device-width; }
 
-@media screen and (max-width: 400px) {
-  @-ms-viewport { width: 320px; }
+.visible-print {
+  display: none !important;
+}
+@media print {
+  .visible-print {
+    display: block !important;
+  }
+  table.visible-print {
+    display: table;
+  }
+  tr.visible-print {
+    display: table-row !important;
+  }
+  th.visible-print,
+  td.visible-print {
+    display: table-cell !important;
+  }
+}
+@media print {
+  .hidden-print {
+    display: none !important;
+  }
 }

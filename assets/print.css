@@ -1,6 +1,6 @@
 /*!
  * Print styles
- *  taken from Bootstrap v3.0.0
+ *  taken from Bootstrap v3.1.1
  */
 
 @media print {
@@ -20,7 +20,6 @@
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
-  .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
@@ -28,6 +27,7 @@
   pre,
   blockquote {
     border: 1px solid #999;
+
     page-break-inside: avoid;
   }
   thead {
@@ -40,9 +40,6 @@
   img {
     max-width: 100% !important;
   }
-  @page  {
-    margin: 2cm .5cm;
-  }
   p,
   h2,
   h3 {
@@ -52,6 +49,9 @@
   h2,
   h3 {
     page-break-after: avoid;
+  }
+  select {
+    background: #fff !important;
   }
   .navbar {
     display: none;
