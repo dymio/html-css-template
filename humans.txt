@@ -5,7 +5,7 @@
   Developer: Ivan Dymkov
   Contact: mstrdymio [at] gmail.com
   Site: dymio.net
-  Site: codenohito.ru
+  Site: proektmarketing.ru
   Twitter: @dymio
   From: Krasnoyarsk, Russia
 
@@ -13,7 +13,7 @@
   @o_mafka
 
 /* SITE */
-  Last update: 2013/02/15
+  Last update: 2014/04/21
   Language: English / Russian
   Standarts: HTML5, CSS3
   Components: jQuery, Ruby on Rails
