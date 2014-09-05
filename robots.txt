@@ -22,18 +22,21 @@
 #
 #! User-agent: Yandex
 #! Disallow: /assets/
+#! Disallow: /humans.txt
 #! Disallow: /*.xls$
 #! Allow: /
 #! Host: example.com
 #! 
 #! User-agent: Googlebot
 #! Disallow: /assets/
+#! Disallow: /humans.txt
 #! Disallow: /*.xls$
 #! Allow: /
 #! 
 #! User-agent: *
 #! Disallow: /assets/
 #! Disallow: /temp/privatedata.xls
+#! Disallow: /humans.txt
 #! Disallow:
 #! 
 #! Sitemap: http://example.com/sitemap.xml
