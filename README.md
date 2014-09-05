@@ -1,9 +1,9 @@
 HTML and CSS Template
 =====================
 
-Version 1.0, April 14, 2014
+Version 1.1, September 5, 2014
 
-This is template for web project frontend. Includes:
+This is frontend template for web project. Includes:
 
 - HTML valid document with all necessary tags in the head tag and some tips;
 - CSS basis and tricks for easy start any project (based on Normalize, Bootstrap and my own works);
@@ -12,7 +12,7 @@ This is template for web project frontend. Includes:
 - sitemap.xml example file;
 - set of favicons in (really) all resolutions that are necessary;
 
-Recomend to minimize and compile css styles.
+Recomend to minimize and compile css styles when use.
 
 
 Browsers support
@@ -22,7 +22,8 @@ IE 8+, Firefox 4+, Safari 5+, Opera, Chrome
 
 Used components
 ---------------
-- [Normalize.css](http://github.com/necolas/normalize.css) as styles base
-- [Bootstrap](http://getbootstrap.com/) as source of many good decisions and design
+- [Normalize.css 3.0.1](http://github.com/necolas/normalize.css) as styles base
+- [Bootstrap 3.2.0](http://getbootstrap.com/) as source of many good decisions and design
+
 
 2014, Ivan Dymkov
