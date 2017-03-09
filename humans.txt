@@ -5,7 +5,7 @@
   Developer: Ivan Dymkov
   Contact: mstrdymio [at] gmail.com
   Site: dymio.net
-  Site: proektmarketing.ru
+  Site: codenohito.ru
   Twitter: @dymio
   From: Krasnoyarsk, Russia
 
@@ -15,7 +15,7 @@
   From: Krasnoyarsk, Russia
 
 /* SITE */
-  Last update: 2014/09/05
+  Last update: 2017/03/10
   Language: English / Russian
   Standarts: HTML5, CSS3
   Components: Normalize

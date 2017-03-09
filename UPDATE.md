@@ -1,57 +1,31 @@
 Update process
 --------------
 
-Get the latest version of [Normalize.css](http://github.com/necolas/normalize.css) and put it to assets/normalize.css file.
+1. Get the latest version of
+    [Normalize.css](http://github.com/necolas/normalize.css)
+    and put it to assets/normalize.css file.
 
-Get the latest version of [Bootstrap](http://getbootstrap.com/). Task if take all styles of base elements without styles for classes (instead table and helpers) and without not really good decisions (IMHO).
+2. Get the latest version of [Bootstrap](http://getbootstrap.com/) css file.
+    Get all styles of elements without classes (instead of table and clearfix).
+    Skip not good decisions (like 'box-sizing: border-box' for all, IMHO).
 
-Copy print section (@media print) from bootstrap.css to assets/print.css.
+3. Media print section (@media print) put to print.css file.
 
-Ignore glyphicon styles.
+4. Ignore box-sizing rules for `*, *:before, *:after` elements.
 
-Ignore all styles for classes (instead table, but later about it).
+5. Update all commont styles in basis.css file: for html, body, a, figure, img
+    tags, forms styles, '@-ms-viewport' rule etc.
 
-Ignore box-sizing rules for all elements.
+6. Update styles of content elements in content.css. Don't forget to add
+    '.content' selector before added css rule.
+    Content elements are elements which user can add by wysiwyg editor.
+    Paragraphs, headers, hr, lists, tables etc.
 
-Copy html and body styles to assets/basis.css with replacing text color form #333 to #000.
+    6.1. Table styles without classes is boring in Bootstrap. Compile styles
+        of table element and '.table' class together.
 
-Also copy to assets/basis.css rules for a, img and figure elements (do not remove anchor underline variants comment cheat).
+    6.2. Do not remove `.content img { max-width: 100%; }` from content.css.
 
-All styles of inputs, selects, fieldsets and other forms components copy to assets/forms_basis.css (do not forget to remove rules for elements with classes).
+7. Update [readme file](README.md): last update date and component versions.
 
-Styles of other elements copy to assets/content.css but put before every rule class '.content'. Example: `.content hr`.
-
-Add `.content img { max-width: 100%; }` to assets/content.css file.
-
-Save rules for classes '.h1', '.h2', '.h3', '.h4', '.h5', '.h6', '.small', '.mark' and do not insert '.content' class before.
-
-Also save elements with classes 'pull-right' and 'pull-left' - this classes we will save into helpers.
-
-Table styles without classes is boring in bootstrap. Need to compile styles of 'table' and '.table' together and put it to assets/content.css file (with adding '.content' before).
-
-Put to assets/helper.css file usefull universal classes rules:
-* .text-left
-* .text-right
-* .text-center
-* .text-justify
-* .text-nowrap
-* .text-lowercase
-* .text-uppercase
-* .text-capitalize
-* .fade (with modifications)
-* .collapse (with modifications)
-* .clearfix
-* .center-block
-* .pull-right
-* .pull-left
-* .affix
-* .hide
-* .show
-* .invisible
-* .text-hide
-* .hidden
-* .visible-print (with modifications)
-* .hidden-print
-* maybe something new?
-
-Put to assets/helper.css file `@-ms-viewport` rule.
+8. Update last update in [humans txt](humans.txt) file;

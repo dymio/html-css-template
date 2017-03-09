@@ -19,28 +19,26 @@
 #       """  sul
 #
 #   Art by Sulliwan Sucks
-#
-#
-#! User-agent: Yandex
-#! Disallow: /assets/
-#! Disallow: /humans.txt
-#! Disallow: /*.xls$
-#! Allow: /
-#! Host: example.com
-#! 
-#! User-agent: Googlebot
-#! Disallow: /assets/
-#! Disallow: /humans.txt
-#! Disallow: /*.xls$
-#! Allow: /
-#! 
-#! User-agent: *
-#! Disallow: /assets/
-#! Disallow: /humans.txt
-#! Disallow: /temp/privatedata.xls
-#! Disallow:
-#! 
-#! Sitemap: http://example.com/sitemap.xml
 
+# # Open site for spiders
+# User-agent: Yandex
+# Disallow: /assets/
+# Disallow: /humans.txt
+# Allow: /
+# Host: example.com
+#
+# User-agent: Googlebot
+# Disallow: /assets/
+# Disallow: /humans.txt
+# Allow: /
+#
+# User-agent: *
+# Disallow: /assets/
+# Disallow: /humans.txt
+# Disallow:
+#
+# Sitemap: http://example.com/sitemap.xml
+
+# Ban all spiders from the entire site
 User-agent: *
 Disallow: /

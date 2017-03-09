@@ -1,13 +1,12 @@
 /*!
- * Screen base styles
- *  taken from Bootstrap v3.2.0 | MIT License | getbootstrap.com
+ * Screen base styles (include form base styles)
+ *  based on Bootstrap v3.3.7 | MIT License | getbootstrap.com
  */
 
 html {
   font-size: 10px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -17,28 +16,24 @@ body {
 }
 
 a {
-  color: #428bca;
+  color: #337ab7;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #2a6496;
+  color: #23527c;
   text-decoration: underline;
 }
 a:focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-/* anchor underline variants */
-/* - single line only variant -
-  display: inline-block;
-  border-bottom: 1px solid;
-  line-height: 90%;
-*/
-/* - good variant for single color inline link (can be multiline) -
-  background: url('one_px_428bca.png') repeat-x left 1.26em;
-*/
+/* Think underline variant for inline-block link:
+    display: inline-block;
+    border-bottom: 1px solid;
+    line-height: 90%; */
+/* Thin underline variant for inline with 1 square px image:
+    background: url('one_px_428bca.png') repeat-x left 1.26em; */
 
 figure {
   margin: 0;
@@ -46,5 +41,79 @@ figure {
 img {
   vertical-align: middle;
 }
+[role="button"] {
+  cursor: pointer;
+}
 
 @-ms-viewport { width: device-width; }
+
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 21px;
+  line-height: inherit;
+  color: #333;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+input[type="search"] {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-appearance: none;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 4px 0 0;
+  margin-top: 1px \9;
+  line-height: normal;
+}
+input[type="file"] {
+  display: block;
+}
+input[type="range"] {
+  display: block;
+  width: 100%;
+}
+select[multiple],
+select[size] {
+  height: auto;
+}
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+output {
+  display: block;
+  padding-top: 7px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+}
+input[type="radio"][disabled],
+input[type="checkbox"][disabled],
+fieldset[disabled] input[type="radio"],
+fieldset[disabled] input[type="checkbox"] {
+  cursor: not-allowed;
+}

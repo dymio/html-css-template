@@ -1,40 +1,35 @@
-/** STICKY FOOTER **/
+/* Sticky footer */
 html, body { height: 100%; }
 #wrap {
   min-height: 100%;
   margin-bottom: -72px; }
-  #wrap:after {
-    content: " ";
-    display: block;
-    height: 72px; }
+  #wrap:after { content: " "; display: block; height: 72px; }
 #footer { height: 72px; background: silver; }
-/** END OF STICKY FOOTER FUNCTIONAL **/
-
-/*
- * Sometimes, first, modern variant don't work because different reasons,
- * but we have less stylish bulletproof variant with .dilator block
- ** OLD FASHIONED STICKY FOOTER **
-html, body { height: 100%; }
-#wrap {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -72px;
-  padding: 0; }
-  #wrap .dilator { height: 72px; }
-#footer { height: 72px; background: silver; }
-/** END OF OLD FASHIONED STICKY FOOTER **/
-
-/* Responsive media rules from Bootstrap 3 */
-/* DEFAULT IS EXTRA SMALL - less than 768px */
-@media (min-width: 768px) {} /* SMALL */
-@media (min-width: 992px) {} /* MEDIUM */
-@media (min-width: 1200px) {} /* LARGE */
 
 
-/* Responsive media rules from Bootstrap 2 */
-@media (min-width: 1200px) { } /* Large desktop */
-/* DEFAULT IS width from 980px to 1999px */
-@media (min-width: 768px) and (max-width: 979px) { } /* Portrait tablet to landscape and desktop */
-@media (max-width: 767px) { } /* Landscape phone to portrait tablet */
-@media (max-width: 480px) { } /* Landscape phones and down */
+/* Clearfix hack */
+.clearfix:before,
+.clearfix:after { display: table; content: " "; }
+.clearfix:after { clear: both; }
+
+
+/* The holder */
+.holder {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 980px;
+}
+
+/* Responsive media rules from Bootstrap 3:
+    Default is EXTRA SMALL - less than 768px
+    @media (min-width: 768px) {} SMALL
+    @media (min-width: 992px) {} MEDIUM
+    @media (min-width: 1200px) {} LARGE */
+/* Responsive media rules from Bootstrap 2:
+    @media (min-width: 1200px) { } Large desktop
+    Default is width from 980px to 1999px
+    @media (min-width: 768px) and (max-width: 979px) { } Portrait tablet to landscape and desktop
+    @media (max-width: 767px) { } Landscape phone to portrait tablet
+    @media (max-width: 480px) { } Landscape phones and down */
