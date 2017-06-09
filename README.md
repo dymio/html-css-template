@@ -81,7 +81,7 @@ to allow any web page to have the same functionality as any other object
 
 Build a correct favicon.ico file with ImageMagick:
 
-    convert fav16.png fav32.png fav48.png fav64.png favicon.ico
+    convert fav16.png fav32.png fav48.png favicon.ico
 
 Or with [online service](http://icoconvert.com/).
 
